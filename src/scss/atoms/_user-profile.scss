@@ -1,0 +1,23 @@
+@use "../settings/variables";
+
+.a-user-profile {
+    color: variables.$success-color;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 100px;
+    }
+    label {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+
+    .a-user-profile {
+        padding: 0.7em 0;
+    }
+}

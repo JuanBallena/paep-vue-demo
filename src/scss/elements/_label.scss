@@ -1,0 +1,15 @@
+@use "../settings/variables";
+
+label {
+    font-weight: 400;
+    font-size: 14px;
+    color: variables.$gris-color;
+    // text-transform: uppercase;
+}
+
+@media (max-width: variables.$max-width-sm) {
+
+    label {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+.a-divider {
+    height: 1px;
+    width: 100%;
+    background: variables.$gris-color-6;
+    margin: 0.5em 0;
+}

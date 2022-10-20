@@ -1,0 +1,65 @@
+@use "../settings/variables";
+
+.m-simple-modal {
+    background: rgba(variables.$complementary-1, 0.4);
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    animation: fadeSection 0.5s;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    &--md {
+        width: 600px;
+    }
+    &--lg {
+        width: 750px;
+    }
+    &__body {
+        max-height: 90vh;
+        margin: auto;
+        
+        background: white;
+        padding: 2.5em;
+        border-radius: 16px;
+        position: relative;
+        overflow-y: scroll;
+        &::-webkit-scrollbar-track {
+            margin: 7px 0;
+        }
+        &::-webkit-scrollbar {
+            width: 4px;
+            background: transparent;
+            border-radius: 0 6px 6px 0;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgba(variables.$gris-color, .7);
+            border-radius: 0 10px 10px 0; 
+        }
+    }
+    &__close {
+        position: absolute;
+        right: 1.5em;
+        top: 1em;
+        font-size: 18px;
+        color: variables.$gris-color;
+        cursor: pointer;
+    }
+    &__close:hover {
+        color: variables.$primary-color;
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+    .m-simple-modal {
+        &__body {
+            padding: 1.5em;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@use "../settings/variables";
+
+.a-user {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 4px;
+    text-align: right;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    color: variables.$gris-color;
+    i {
+        font-size: 30px;
+        color: variables.$primary-color;
+    }
+}

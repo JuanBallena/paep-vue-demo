@@ -1,0 +1,31 @@
+@use "../settings/variables";
+
+.o-pregunta-encuesta {
+    background: white;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    &__pregunta {        
+        font-size: 14px;
+        color: rgba(variables.$success-color, .7);
+        font-weight: bold;
+    }
+    &__alternativa {
+        margin: 0.6em 0;
+        display: flex;
+        cursor: pointer;
+        &__text {
+            padding-top: 0.3em;
+            margin-left: 1em;
+            font-size: 13px;
+            color: variables.$gris-color;
+        }
+    }
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .o-pregunta-encuesta {
+        padding: 1em 1.5em;
+    }
+}

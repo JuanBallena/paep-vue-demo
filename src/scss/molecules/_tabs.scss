@@ -1,0 +1,30 @@
+@use "../settings/variables";
+
+.m-tabs {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    &__tab {
+        font-size: 13px;
+        font-weight: 500;
+        // background: variables.$accent-color;
+        padding: 0.5em;
+        width: 100%;
+        text-transform: uppercase;
+        color: rgba(variables.$gris-color, .5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        i {
+            font-size: 17px;
+            width: 34px;
+        }
+        &--active {
+            color: variables.$primary-color;
+            border-bottom: 2px solid variables.$primary-color;
+            // background: white;
+        }
+    }
+}

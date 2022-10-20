@@ -1,0 +1,30 @@
+@use "../settings/variables";
+
+.o-url-encuesta-container {
+    padding: 0.5em 1em;
+    background: variables.$accent-color-active;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid variables.$gris-color-6;
+    input {
+        background: variables.$accent-color-active;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+
+    .o-url-encuesta-container {
+        text-align: center;
+        display: block;
+        padding: 1em;
+        input {
+            margin-bottom: 1em;
+        }
+    }
+}

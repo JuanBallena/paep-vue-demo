@@ -1,0 +1,14 @@
+@use "../settings/variables";
+
+.a-statics {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    &__text {
+        color: variables.$gris-color;
+    }
+    &__number {
+        font-weight: bold;
+        color: variables.$primary-color;
+    }
+}

@@ -1,0 +1,14 @@
+@use "../settings/variables";
+
+.m-card {
+    border-radius: 6px;
+    margin-bottom: 1em;
+    background: white;
+    border: 1px solid variables.$gris-color-6;
+    &__header {
+        padding: 1.2em 1.5em;
+    }
+    &__body {
+        padding: 1.2em 1.5em;
+    }
+}

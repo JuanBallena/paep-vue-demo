@@ -1,0 +1,70 @@
+@use "../settings/variables";
+
+.g-estadisticas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "grafica-1 grafica-2"
+        "grafica-3 grafica-3"
+        "grafica-4 grafica-5"
+        "grafica-6 grafica-7"
+        "grafica-8 grafica-9";
+    gap: 0 1.5rem;
+    padding: 1em 0;
+    &__grafica-1 {
+        grid-area: grafica-1;
+    }
+    &__grafica-2 {
+        grid-area: grafica-2;
+    }
+    &__grafica-3 {
+        grid-area: grafica-3;
+        overflow: auto;
+    }
+    &__grafica-4 {
+        grid-area: grafica-4;
+        overflow: auto;
+    }
+    &__grafica-5 {
+        grid-area: grafica-5;
+        overflow: auto;
+    }
+    &__grafica-6 {
+        grid-area: grafica-6;
+        overflow: auto;
+    }
+    &__grafica-7 {
+        grid-area: grafica-7;
+        overflow: auto;
+    }
+    &__grafica-8 {
+        grid-area: grafica-8;
+        overflow: auto;
+    }
+    &__grafica-9 {
+        grid-area: grafica-9;
+        overflow: auto;
+    }
+}
+
+
+
+@media (max-width: variables.$max-width-sm) {
+
+    .g-estadisticas {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "grafica-1"
+            "grafica-2"
+            "grafica-3"
+            "grafica-4"
+            "grafica-5"
+            "grafica-6"
+            "grafica-7"
+            "grafica-8"
+            "grafica-9";
+        gap: 0;
+        padding: 0;
+        
+    }
+}

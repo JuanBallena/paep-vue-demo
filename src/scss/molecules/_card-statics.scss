@@ -1,0 +1,34 @@
+@use "../settings/variables";
+
+.m-card-statics {
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 2em;
+    height: 300px;
+    background: white;
+    overflow: auto;
+    border: 1px solid variables.$gris-color-6;
+    &__header {
+        padding: 1.2em 1.5em 0 1.5em;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: variables.$gris-color;
+        margin-bottom: 0.8em;
+        text-transform: uppercase;
+    }
+    &__body {
+        position: relative;
+        height: auto;
+        padding: 1.2em 1.5em;
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+
+    .m-card-statics {
+        min-height: auto;
+        margin-bottom: 1.5em;
+    }
+}

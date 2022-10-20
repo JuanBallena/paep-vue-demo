@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+.a-error {
+    color: variables.$danger-color;
+    font-size: 12px;
+    padding: 0.1em 0;
+    text-transform: uppercase;
+}

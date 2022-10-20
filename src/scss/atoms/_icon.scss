@@ -1,0 +1,13 @@
+@use "../settings/variables";
+
+.a-icon {
+    padding: 0 0.5em;
+    i {
+        font-size: 12px;
+        color: variables.$gris-color;
+        &:hover {
+            cursor: pointer;
+            color: variables.$primary-color;
+        }
+    }
+}

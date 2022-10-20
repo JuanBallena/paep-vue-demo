@@ -1,0 +1,27 @@
+@use "../settings/variables";
+
+.a-page {
+    border: 1px solid variables.$gris-color-6;
+    outline: none;
+    border-top-left-radius: 10px;
+    padding: 0.5em;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    width: 35px;
+    margin-right: 0.5em;
+    transition: 0.2s linear;
+    font-weight: 500;
+    &--default {
+        background: white;
+        color: variables.$gris-color;
+    }
+    &--active {
+        background: variables.$success-color;
+        color: white;
+    }
+    &--muted {
+        background: rgba(variables.$accent-color, .8);
+        color: rgba(variables.$gris-color, .3);
+    }
+}

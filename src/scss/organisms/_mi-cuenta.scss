@@ -1,0 +1,27 @@
+@use "../settings/variables";
+
+.g-mi-cuenta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "perfil cuenta cuenta";
+    gap: 1rem;
+    &__perfil {
+        grid-area: perfil;
+    }
+    &__cuenta {
+        grid-area: cuenta;
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+
+    .g-mi-cuenta {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "perfil"
+            "cuenta";
+        gap: 0;
+        row-gap: 1em;
+        padding-bottom: 1em;
+    }
+}

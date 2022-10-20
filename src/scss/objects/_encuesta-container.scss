@@ -1,0 +1,12 @@
+@use "../settings/variables";
+
+.o-encuesta-container {
+    padding: 1rem 10rem;
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .o-encuesta-container {
+        padding: 1rem;
+    }
+}

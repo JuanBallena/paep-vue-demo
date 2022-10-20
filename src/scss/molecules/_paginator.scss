@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+.m-paginator {
+    &__pages {
+        display: flex;
+        // padding: 1em 0;
+    }
+}

@@ -1,0 +1,163 @@
+@use "../settings/variables";
+
+header {
+    z-index: 9;
+    // position: sticky;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    > section {
+      display: none;
+    }
+    > nav {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        background: white;
+        > ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            > li {
+                height: 10vh;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // &.router-link-active a {
+                //     color: #f66;
+                // }
+                > a {
+                    text-decoration: none;
+                    padding: 0.5em 1em;
+                    color: variables.$gris-color;
+                    font-weight: 500;
+                    border-radius: 6px;
+                    // &.router-link-active {
+                    //     color: #f66;
+                    // }
+                    // &:hover {
+                    //     // background: variables.$accent-color-active;
+                    //     transition: all 0.3s;
+                    //     > i {
+                    //         transition: all 0.3s;
+                    //     }
+                    // }
+                    > i {
+                        margin-right: 0.5em;
+                        color: variables.$primary-color;
+                    }
+                }
+            }
+            > li:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+}
+
+#checkbox-icon-bars {
+    display: none;
+}
+
+.a-link--active {
+    background: variables.$accent-color-active;
+    // color: white;
+    // i {
+    //     color: white;
+    // }
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    header {
+        display: flex;
+        z-index: 10;
+        position: relative;
+        > section {
+            width: 100%;
+            height: 50px;
+            background: variables.$primary-color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0.5em 0 1.2em;
+
+            position: fixed;
+            left: 0;
+            top: 0;
+            label {
+                i {
+                    cursor: pointer;
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+            p {
+                font-size: 16px;
+                color: white;
+                font-weight: bold;
+            }        
+        }
+        nav {
+            // background: rgba(variables.$complementary-1, 0.4);
+            position: fixed;
+            transition: all 0.5s;
+            width: 50%;
+            height: 100vh;
+            left: -100%;
+            // z-index: 9;
+            > ul {
+                // width: 50%;
+                height: 100vh;
+                display: block;
+                padding: 1em;
+                background: variables.$accent-color-active;
+                > li {
+                    height: 40px;
+                    justify-content: flex-start;
+                    text-align: left;
+                    a {
+                        width: 100%;
+                    }
+                }
+                > li:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-align: right;
+                    padding: 0 1.2em;
+                    i {
+                        margin-right: 0.3em;
+                    }
+                    span {
+                        text-align: left;
+                        font-size: 14px;
+                        color: variables.$primary-color;
+                        font-weight: bold;
+                    }
+                    label {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    #checkbox-icon-bars:checked~nav {
+        left: 0;
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+
+    header {
+        nav {
+            // ul {
+                width: 100%;
+            // }
+        }
+    }
+}

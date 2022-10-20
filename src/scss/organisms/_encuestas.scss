@@ -1,0 +1,15 @@
+@use "../settings/variables";
+
+.g-encuestas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: variables.$max-width-sm) {
+    .g-encuestas {
+        gap: 0;
+        row-gap: 1em;
+    }
+}

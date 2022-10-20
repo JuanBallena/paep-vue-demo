@@ -1,0 +1,7 @@
+@use "../settings/variables";
+
+@media (max-width: variables.$max-width-lg) {
+    main {
+        padding: 1em;
+    }
+}

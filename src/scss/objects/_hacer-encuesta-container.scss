@@ -1,0 +1,16 @@
+@use "../settings/variables";
+
+.o-hacer-encuesta-container {
+    padding: 1.5em 12%;
+    background: variables.$accent-color;
+    min-height: 100vh;
+    margin-top: -10vh;
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .o-hacer-encuesta-container {
+        margin-top: -50px;
+        padding: 1.5em 1em 2em 1em;
+    }
+}

@@ -1,0 +1,31 @@
+@use "../settings/variables";
+
+.g-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sidebar sidebar main main main main main main main";
+    &__sidebar {
+        grid-area: sidebar;
+        height: 90vh;
+        padding: 1em;
+    }
+    &__main {
+        border-left: 1px solid variables.$gris-color-6;
+        background: variables.$accent-color;
+        grid-area: main;
+        min-height: 90vh;
+    }
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .g-dashboard {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "sidebar"
+            "main";
+        &__sidebar {
+            height: auto;
+        }
+    }
+}

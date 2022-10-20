@@ -1,0 +1,9 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.a-text-field {
+    @include mixins.text-field-base; // background - border - borderFocus
+    &--error {
+        @include mixins.text-field-base(white, variables.$danger-color, variables.$danger-color);
+    }
+}

@@ -1,0 +1,50 @@
+@use "../settings/variables";
+
+.a-alert {
+    width: 100%;
+    margin: 1em 0;
+    border-radius: 6px;
+    padding: 0.5em;
+    &__content {
+        display: flex;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3em 0.5em;
+        i {
+            font-size: 18px;
+        }
+    }
+    &__message {
+        width: 100%;
+        padding: 0.3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        align-items: justify;
+        align-items: center;
+    }
+    &__clear {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3em 0.5em;
+        i {
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+    &--danger {
+        background: rgba(variables.$danger-color, .2);
+        color: variables.$danger-color;
+    }
+    &--success {
+        background: rgba(variables.$success-color, .2);
+        color: variables.$success-color;
+    }
+    &--info {
+        background: rgba(variables.$primary-color, .2);
+        color: variables.$primary-color;
+    }
+}

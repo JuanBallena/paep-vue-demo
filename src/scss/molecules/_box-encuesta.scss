@@ -1,0 +1,105 @@
+@use "../settings/variables";
+
+.m-box-encuesta {
+    height: 13rem;
+    border-radius: 10px;
+    padding: 1em 1.3em;
+    border: 2px solid variables.$gris-color-6;
+    background: variables.$accent-color;
+    position: relative;
+    &:hover {
+            background: rgba(variables.$success-color, .2);
+        }
+    &--active {
+        height: 13rem;
+        border-radius: 10px;
+        border: 2px solid variables.$gris-color-6;
+        background: rgba(variables.$success-color, .1);
+        // background: rgba(variables.$primary-color, .8);
+        cursor: pointer;
+    }
+    &__text-crear-encuesta {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: variables.$primary-color;
+        // color: white;
+        i {
+            font-size: 40px;
+            // color: variables.$primary-color;
+        }
+    }
+    &__status {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        top: 0;
+        height: 3em;
+        min-width: 13em;
+        font-size: 13px;
+        color: variables.$primary-color;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 10px;
+        font-weight: bold;
+        background: rgba(variables.$primary-color, .1);
+        i {
+            margin-left: 0.8em;
+        }
+    }
+    &__status-close {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        top: 0;
+        height: 3em;
+        min-width: 13em;
+        font-size: 13px;
+        color: variables.$danger-color;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 10px;
+        font-weight: bold;
+        background: rgba(variables.$danger-color, .1);
+        i {
+            margin-left: 0.8em;
+        }
+    }
+    &__info-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+    }
+    &__info {
+        width: 100%;
+    }
+    &__title {
+        font-size: 15px;
+        font-weight: 500;
+        color: variables.$gris-color;
+        span {
+            cursor: pointer;
+        }
+        :hover {
+            color: variables.$primary-color;
+        }
+    }
+    &__answer {
+        font-size: 14px;
+        color: variables.$gris-color;
+    }
+    &__actions {
+        i {
+            width: 2rem;
+            color: variables.$gris-color;
+            font-size: 20px;
+            &:hover {
+                color: variables.$primary-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

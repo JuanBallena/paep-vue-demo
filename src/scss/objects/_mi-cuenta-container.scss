@@ -1,0 +1,14 @@
+@use "../settings/variables";
+
+.o-mi-cuenta-container {
+    padding: 1rem 10rem;
+    background: variables.$accent-color;
+    height: 90vh;
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .o-mi-cuenta-container {
+        padding: 1rem;
+    }
+}

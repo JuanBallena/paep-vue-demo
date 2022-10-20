@@ -1,0 +1,14 @@
+@use "../settings/variables";
+
+.o-recopilar-respuestas-container {
+    padding: 1rem 10rem;
+    background: variables.$accent-color;
+    height: 90vh;
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .o-recopilar-respuestas-container {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,17 @@
+@use "../settings/variables";
+
+.g-analizar-resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1rem;
+    padding: 1em 0;
+}
+
+@media (max-width: variables.$max-width-sm) {
+
+    .g-analizar-resultados {
+        gap: 0;
+        row-gap: 1em;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,21 @@
+@use "../settings/variables";
+
+.u-color-danger {
+    color: variables.$danger-color;
+}
+
+.u-color-success {
+    color: variables.$success-color;
+}
+
+.u-color-primary {
+    color: variables.$primary-color;
+}
+
+.u-color-muted {
+    color: rgba(variables.$gris-color, .5);
+}
+
+.u-bg-color-accent {
+    background: variables.$accent-color;
+}

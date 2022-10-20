@@ -1,0 +1,48 @@
+@use "../settings/variables";
+
+.a-btn {
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    font-weight: 500;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0.5em 1.2em;
+    &--default {
+        background: white;
+        color: variables.$gris-color;
+    }
+    &--primary {
+        background: variables.$primary-color;
+        color: white;
+    }
+    &--success {
+        background: variables.$success-color;
+        color: white;
+    }
+    &--danger {
+        background: variables.$danger-color;
+        color: white;
+    }
+    &--muted {
+        background: rgba(variables.$success-color, .3);
+        color: white;
+        cursor: default;
+    }
+    &--muted-primary {
+        background: rgba(variables.$primary-color, .3);
+        color: white;
+        cursor: default;
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+    .a-btn {
+        width: 100%;
+    }
+}

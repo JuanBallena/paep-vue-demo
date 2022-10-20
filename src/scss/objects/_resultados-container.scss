@@ -1,0 +1,12 @@
+@use "../settings/variables";
+
+.o-resultados-container {
+    padding: 1rem 3rem;
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .o-resultados-container {
+        padding: 1rem;
+    }
+}

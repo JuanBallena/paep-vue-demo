@@ -1,0 +1,37 @@
+@use "../settings/variables";
+
+.m-card-pregunta-critica {
+    padding: 0 1em;
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        color: #825F65;
+        margin-bottom: 1.2em;
+    }
+    &__list {
+        padding: 0;
+        li {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+            color: variables.$gris-color;
+        }
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+
+    .m-card-pregunta-critica {
+        padding-top: 1em;
+        &__title {
+            font-size: 13px;
+        }
+        &__list {
+            li {
+                font-size: 12px;
+            }
+        }
+    }
+}

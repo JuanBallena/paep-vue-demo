@@ -1,0 +1,77 @@
+@use "../settings/variables";
+
+.m-dropdown-left {
+    padding: 0 2rem;
+    position: relative;
+    border: none;
+    outline: none;
+    &__text-container {
+        cursor: pointer;
+        display: flex;
+        i {
+            color: variables.$primary-color;
+            font-size: 22px;
+            width: 26px;
+        }
+    }
+    &__box {
+        background: variables.$accent-color;
+        // background: red;
+        margin-right: -20px;
+        margin-left: -273px;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 2.8em;
+        width: 320px;
+        border-radius: 10px;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 1em;
+           
+        }
+        li {
+            font-size: 14px;
+            padding-top: 0.3em;
+            display: block;
+            cursor: pointer;
+            color: variables.$gris-color;
+            text-align: left;
+            i {
+                width: 28px;
+            }
+        }
+        // li:last-child {
+        //     color: variables.$danger-color;
+        // }
+    }
+}
+
+.m-dropdown-left__box:before {
+    content:"";
+    position: absolute;
+    right: 26px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent variables.$accent-color transparent;
+    z-index: 2;
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .m-dropdown-left {
+        // padding: 0 1rem;
+        &__text-container {
+            i {
+                color: white;
+                font-size: 20px;
+            }
+        }
+        &__box {
+            top: 5em;
+        }
+    }
+}

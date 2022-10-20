@@ -1,0 +1,30 @@
+@use "../settings/variables";
+
+.u-visible-only-lg {
+    display: block;
+}
+
+.u-no-visible-sm {
+    display: block;
+}
+
+.u-visible-from-lg {
+    display: none;
+}
+
+@media (max-width: variables.$max-width-lg) {
+
+    .u-visible-only-lg {
+        display: none;
+    }
+    
+    .u-visible-from-lg {
+        display: block;
+    }
+}
+
+@media (max-width: variables.$max-width-sm) {
+    .u-no-visible-sm {
+        display: none;
+    }
+}

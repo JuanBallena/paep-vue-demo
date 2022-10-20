@@ -1,0 +1,9 @@
+@use "../settings/variables";
+
+.u-uppercase {
+    text-transform: uppercase;
+}
+
+.u-text-danger {
+    color: variables.$danger-color;
+}

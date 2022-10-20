@@ -1,0 +1,20 @@
+.u-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-align-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.u-align-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.u-display-flex {
+    display: flex;
+}

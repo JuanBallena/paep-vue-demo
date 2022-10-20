@@ -1,0 +1,12 @@
+@use "../settings/variables";
+
+.a-text-action {
+    color: variables.$success-color;
+    padding: 0.2em 0.5em;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    i {
+        width: 16px;
+    }
+}
