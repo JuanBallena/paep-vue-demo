@@ -1,0 +1,6 @@
+{
+  "BASE_URL_API": "https://m7hbhq9dn7.execute-api.us-east-2.amazonaws.com/DESA",
+  "ITEMS_PER_PAGE_ENCUESTAS": 10,
+  "ITEMS_PER_PAGE_USUARIOS": 10,
+  "ITEMS_PER_PAGE_ENCUESTAS_CULMINADAS": 10
+}
