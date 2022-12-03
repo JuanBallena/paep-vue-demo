@@ -1,26 +1,23 @@
 @use "../settings/variables";
 
 .g-login {
-    height:  100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2.5em 1em;
-    margin-top: -10vh;
+    // padding: 2.5em 1em;
+    max-height: 100vh;
     &__img-container {
-        // display: flex;
+        overflow: hidden;
         position: absolute;
-        // justify-content: stretch;
-        // height: 100vh;
-        top:0;
+        max-height: 100vh;
+        width: 100%;
+        height: 100%;
+        top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
         img {
-            
-            object-fit: cover;//fill
+            object-fit: cover;
             width: 100%;
-            height: 100vh;
+            height: 100%;
         }
     }
     &__form-container {
@@ -28,12 +25,14 @@
         min-width: 30%;
         z-index: 2;
         padding: 0.3rem 0;
+        margin: 26rem 0 0 0;
     }
     &__form {
         // background: variables.$gris-color-6;
         height: auto;
         padding: 0 3rem;
-        input, select {
+        input,
+        select {
             width: 100%;
             background: white;
             height: 30px;
@@ -79,7 +78,7 @@
             cursor: pointer;
         }
         &__button--disabled {
-            background: rgba(variables.$complementary-1, .2);
+            background: rgba(variables.$complementary-1, 0.2);
             border-radius: 28px;
             font-size: 14px;
             border: none;
@@ -93,11 +92,10 @@
 }
 
 @media (max-width: variables.$max-width-sm) {
-
     .g-login {
         &__title {
             font-size: 14px;
         }
-        margin-top: -50px;
+        // margin-top: -50px;
     }
 }

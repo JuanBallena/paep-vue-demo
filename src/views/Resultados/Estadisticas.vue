@@ -267,14 +267,17 @@ export default defineComponent({
 
             const serviceResponse = await listarEstadisticasAgrupadasService.listar(params);
             
+            let labels = [];
+            labels.push('Item 1');
+            labels.push('Item 2');
+
             if (serviceResponse.exito())
             {
                 const array = serviceResponse.data['estadisticas'];
-                let labels = [];
                 let data = [];
 
                 array.forEach(item => {
-                    labels.push(item['generoDescripcion']);
+                    // labels.push(item['generoDescripcion']);
                     data.push(item['cantidad']);
                 });
 

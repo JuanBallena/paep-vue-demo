@@ -1,7 +1,8 @@
 <template>
     <div class="g-login u-align-end">
         <div class="g-login__img-container">
-            <img src="/img/fondo-login.jpeg" alt="">
+            <!-- <img src="/img/fondo-login.jpeg" alt=""> -->
+            <img src="/paep-vue-demo/img/fondo-login.jpeg" alt="">
         </div>
 
         <div class="g-login__form-container">

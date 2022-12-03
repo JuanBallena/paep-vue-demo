@@ -476,7 +476,6 @@ header > nav > ul > li:nth-child(1) {
   header nav > ul > li:nth-child(1) label {
     cursor: pointer;
   }
-
   #checkbox-icon-bars:checked ~ nav {
     left: 0;
   }
@@ -1319,7 +1318,6 @@ input::-ms-clear {
     margin-right: -20px;
     margin-left: -73px;
   }
-
   .m-dropdown__box:before {
     right: 26px;
   }
@@ -1860,36 +1858,38 @@ input::-ms-clear {
   }
 }
 .g-login {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 2.5em 1em;
-  margin-top: -10vh;
+  max-height: 100vh;
 }
 .g-login__img-container {
+  overflow: hidden;
   position: absolute;
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
 }
 .g-login__img-container img {
   object-fit: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .g-login__form-container {
   background: #ECE6E6;
   min-width: 30%;
   z-index: 2;
   padding: 0.3rem 0;
+  margin: 26rem 0 0 0;
 }
 .g-login__form {
   height: auto;
   padding: 0 3rem;
 }
-.g-login__form input, .g-login__form select {
+.g-login__form input,
+.g-login__form select {
   width: 100%;
   background: white;
   height: 30px;
@@ -1899,7 +1899,8 @@ input::-ms-clear {
   margin-bottom: 1em;
   padding: 0 1em;
 }
-.g-login__form input ::placeholder, .g-login__form select ::placeholder {
+.g-login__form input ::placeholder,
+.g-login__form select ::placeholder {
   padding: 0 1em;
 }
 .g-login__form__forgot-password {
@@ -1947,9 +1948,6 @@ input::-ms-clear {
 }
 
 @media (max-width: 600px) {
-  .g-login {
-    margin-top: -50px;
-  }
   .g-login__title {
     font-size: 14px;
   }
@@ -2179,7 +2177,6 @@ input::-ms-clear {
   .u-visible-only-lg {
     display: none;
   }
-
   .u-visible-from-lg {
     display: block;
   }
@@ -2213,4 +2210,4 @@ input::-ms-clear {
   background: #F5F5F5;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.css.map */
